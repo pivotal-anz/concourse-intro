@@ -50,7 +50,7 @@ run:
 
 Note that the task is actually executed by a Docker container, so I guess the Concourse VM has Docker installed internally.
 
-This task runs the `test` script in `myrepo`.  Which brings us to resources.
+This task runs the `test` script in `concourse-intro`.  Which brings us to resources.
 
 ## Resources
 
