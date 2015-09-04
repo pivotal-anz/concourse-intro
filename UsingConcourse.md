@@ -195,6 +195,6 @@ Whilst this is a nice simple first example, it is not typical and, personally, I
 
 # Performing Continuous Integration
 
-See [ContinuousIntegration](ContinuousIntegration).
+See [ContinuousIntegration](ContinuousIntegration.md).
 
 
