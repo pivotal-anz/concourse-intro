@@ -192,3 +192,9 @@ The `say-hello` task is defined using the `config` sub-element instead of a YAML
 As a result, this flow appears in the Web GUI as a single grey box which doesn't look like a flow at all (since it has no input or output resources).
 
 Whilst this is a nice simple first example, it is not typical and, personally, I found it more confusing than helpful.
+
+# Performing Continuous Integration
+
+See (ContinuousIntegration)[ContinuousIntegration].
+
+
