@@ -95,6 +95,7 @@ jobs:
 
 Note:
 
+1. The `trigger:true` option to the git step tells the job to reru automatically whenever the repository is updated.
 1. `concourse-intro` contains both the test script (`concourse-intro/scripts/test`) and the task (`concourse-intro/ci/test-task.yml`) to run it.
 1. The task name `unit` is arbitrary.  There are _no_ predefined tasks.
 
@@ -133,7 +134,7 @@ From a command line (Terminal or CMD window), run:
 fly configure test-pipeline -c first.yml --paused=false
 ```
 
-You will be prompted with `apply configuration? (y/n)` - just answer `y`.  This sets up the new Job as a pipeline and makes it runable (`paused=false`).
+You will be prompted with `apply configuration? (y/n)` - just answer `y`.  This sets up the new Job as a pipeline and makes it runnable (`paused=false`).
 
 __Note:__ Make sure the name of the pipeline specified in `fly configure` is the same as the name in the YAML file.  They don't have to be the same, it's just annoyingly confusing if they aren't.
 
@@ -143,7 +144,9 @@ Open this URL now and you should see:
 
 ![Pipeline Page](https://github.com/pivotal-anz/concourse-intro/blob/master/screenshots/pipeline-page.png)
 
-Click on the grey-box and you see this:
+Note the color-coding key on the bottom left (grey: pending, yellow: started and so on).  You will see the flows change color according to this scheme.
+
+Click on the grey-box (pending since we haven't run it yet) and you see this:
 
 ![Pipeline Jobs Page](https://github.com/pivotal-anz/concourse-intro/blob/master/screenshots/pipeline-jobs-page.png)
 
