@@ -98,13 +98,13 @@ Note:
 1. `concourse-intro` contains both the test script (`concourse-intro/scripts/test`) and the task (`concourse-intro/ci/test-task.yml`) to run it.
 1. The task name `unit` is arbitrary.  There are _no_ predefined tasks.
 
-A job consists of one or more "steps".  Just a few of the predefined job-steps are:
+A job consists of one or more "_steps_".  Just a few of the predefined job-steps are:
 
 1. `get`: fetch a resource
 1. `put`: update a resource
 1. `task`: execute a task
 
-Suppose our test script outputs to a log file `test-out.log`.  We can add a step to view it.  I have also modified the script to use my github id (pivotal-anz):
+Here is a complete example that fetches a resource (this project) from github and executes a script within it.
 
 ```
 resources:
@@ -189,16 +189,3 @@ The `say-hello` task is defined using the `config` sub-element instead of a YAML
 As a result, this flow appears in the Web GUI as a single grey box which doesn't look like a flow at all (since it has no input or output resources).
 
 Whilst this is a nice simple first example, it is not typical and, personally, I found it more confusing than helpful.
-
-
-
-
-
-
-
-
-
-
-
-
- 
