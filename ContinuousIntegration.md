@@ -1,7 +1,7 @@
 # Continuous Integration
 
-Firtly it should be noted that Concourse is nt a CI tool, out-of-the-box.
-It defines flows and a CI pipeline is simply one possible flow.  As such
+Firstly it should be noted that Concourse is _not_ a dedicated CI tool.
+It defines generic flows and a CI pipeline is simply one possible flow.  As such
 you must roll-your-own.
 
 ## Docker Images
